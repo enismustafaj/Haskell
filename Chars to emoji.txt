@@ -1,0 +1,92 @@
+Hexadecimal
+53 69 6d 70 6c 69 63 69 74 79 2c 20 63 61 72 72
+69 65 64 20 74 6f 20 74 68 65 20 65 78 74 72 65
+6d 65 2c 20 62 65 63 6f 6d 65 73 20 65 6c 65 67
+61 6e 63 65 2e 0a 2d 20 4a 6f 6e 20 46 72 61 6e
+6b 6c 69 6e 0a
+
+Decimal
+83 105 109 112 108 105 99 105 116 121 44 32 99 97 114 114
+105 101 100 32 116 111 32 116 104 101 32 101 120 116 114 101
+109 101 44 32 98 101 99 111 109 101 115 32 101 108 101 103 
+97 110 99 101 46 10 45 32 74 111 110 32 70 114 97 110 
+107 108 105 110 10
+
+Converted to a text it is:
+Simplicity, carried to the extreme, becomes elegance.
+
+- Jon Franklin
+0a is a control code which is a new line.
+
+b)
+
+Unicode 	UTF-8	 	Name
+
+U+007E		7e		TILDE
+U+007B		7b		LEFT CURLY BRACKET
+U+002D		2d		HYPHEN-MINUS
+U+222A		e2 88 aa	UNION
+U+007B		7b		LEFT CURLY BRACKET
+U+2212		e2 88 92	MINUS SIGN
+U+007D		7d		RIGHT CURLY BRACKET
+U+222A		e2 88 aa	UNION
+U+007B		7b		LEFT CURLY BRACKET
+U+00AD		c2 ad		SOFT HYPHEN
+U+007D		7d		RIGHT CURLY BRACKET
+U+222A		e2 88 aa	UNION
+U+007B		7b		LEFT CURLY BRACKET
+U+2013		e2 80 93	EN DASH
+U+007D		7d		RIGHT CURLY BRACKET
+U+222A		e2 88 aa	UNION
+U+007B		7b		LEFT CURLY BRACKET
+U+2011		e2 80 91	NON-BREAKING HYPHEN
+U+007D		7d		RIGHT CURLY BRACKET
+U+222A		e2 88 aa	UNION
+U+007B		7b		LEFT CURLY BRACKET
+U+2014		e2 80 94	EM DASH
+U+007D		7d		RIGHT CURLY BRACKET
+U+222A		e2 88 aa	UNION
+U+007B		7b		LEFT CURLY BRACKET
+U+2012		e2 80 92	FIGURE DASH
+U+007D		7d		RIGHT CURLY BRACKET
+U+007C		7c		VERTICAL LINE
+U+0020		20		SPACE
+U+003D		3d		EQUALS SIGN
+U+0020		20		SPACE
+U+0037		37		DIGIT SEVEN
+U+000A	 	0a		<control>
+
+c)In UTF-32 characters are saved in 4 32 bits = 4 bytes. To store 
+800 000 characters we need 800 000 * 4 bytes = 3 200 000 bytes
+In UTF-8 characters can be store in 1, 2, 3 or 4 bytes.In interval U+4E00-U+9FFF characters are stored
+in 3 bytes. To store 800 characters we need 800 000 * 3 bytess = 2 400 000 bytes
+
+
+No. 	Date                          UTC time
+
+1 	2019-10-15T15:15:00+02:00   2019-10-15T13:15:00 + 00:00 
+
+2 	2019-10-13T17:15:00+00:00   2019-10-13T17:15:00 + 00:00   
+3 	2019-10-13T13:15:00+00:00   2019-10-13T13:15:00 + 00:00  
+
+4 	2019-10-13T15:15:00-02:00   2019-10-13T17:15:00 + 00:00   
+
+5 	2019-10-13T00:30:00-12:45   2019-10-13T13:15:00 + 00:00   
+
+6 	2019-10-14T05:15:00+12:00   2019-10-13T17:15:00 + 00:00 
+We convert the date to UTC by adding or subtracting the time offset
+in order to find the equivalent ones. 2, 4, 6 are equivalent. 3, 5 are also equivalent
+
+b)
+This is useful in case when the UTC time is know but the local time is not known and can be 
+represented by offset -00:00.
+c)
+Year 2038 is a problem caused by insufficient capacity of the storage for time. The number of seconds passed
+from 1 January 1970 are stored as a signed 32 bit integer and it won't be albe to encode the time after 1
+January 2038. A solution for this problem would be to increase the capacity of storage to 64 bit.
+
+
+ 
+
+
+ 
